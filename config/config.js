@@ -1,9 +1,9 @@
 module.exports = {
   "development": {
-    "username": "	foyfplhl",
+    "username": "foyfplhl",
     "password": "IMCsbkd2NTKAgRLBZmGcT9_TOyJ773gv",
-    "database": "database_development",
-    "host": "127.0.0.1",
+    "database": "TinyTurtleTest",
+    "host": "salt.db.elephantsql.com", 
     "dialect": "mysql",
     "operatorsAliases": false,
     "port": 5432
