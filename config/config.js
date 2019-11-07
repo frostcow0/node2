@@ -1,10 +1,10 @@
-{
+module.exports={
   "development": {
     "username": "foyfplhl",
     "password": "IMCsbkd2NTKAgRLBZmGcT9_TOyJ773gv",
-    "database": "TinyTurtleTest",
+    "database": "foyfplhl",
     "host": "salt.db.elephantsql.com", 
-    "dialect": "mysql",
+    "dialect": "postgres",
     "operatorsAliases": false,
     "port": 5432
   },

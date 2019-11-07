@@ -1,5 +1,5 @@
 'use strict';
-module.exports = (sequelize,DateTypes)=>{
+module.exports = (sequelize, DataTypes)=>{
     var Lead=sequelize.define('Lead', {
         id: {
             type: DataTypes.UUID,
