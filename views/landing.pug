@@ -3,29 +3,20 @@ html(lang='en')
   include common/head.pug
   +head('Starter MVP')
   body
-    nav.navbar.navbar-expand.navbar-light.bg-light
-      a(href='/', aria-label='Golden Goose').navbar-brand.mr-0.mr-md-2
-        img(src='/images/golden-goose.svg', width='36', height='36')
-      .collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item
-            a.nav-link(href='/') Home
-          li.nav-item
-            a.nav-link(href='/') Leads
-    h1= title
-    p Welcome to #{title}
-    form(action="/",method="POST")
-      input(name="lead_email",type="email",placeholder="Enter your email address")
-      button(type="submit") Submit
-    if leads
-      h1 Leads
-      for lead in leads
-        p(id=lead.id)
-          span #{lead.email}
-          |
-          a(href='/lead/'+lead.id) Details
-          |
-          button(onclick=`deleteLead('${lead.id}')`) Delete
+    header
+      include common/navbar.pug 
+      +navbar()
+      .container
+        .row.align-items-center
+          .col-md-6.order-md-1.text-center.text-md-left.pr-md-5
+            h1.mb-3 Minimum Viable Landing Page
+            p.lead This tutorial teaches you how to build a NodeJS web application covering key topics.
+            p.lead.mb-4 Learn how to launch a landing page and start collecting sales leads.
+            form(action="/",method="POST")
+              .input-group.mb-3
+                input(name="lead_email",type="email",placeholder="Enter your email address").form-control
+                .input-group-append
+                button(type="submit").btn.btn-primary Get Started
 
     script(src='https://code.jquery.com/jquery-3.2.1.min.js')
     include common/footer.pug
