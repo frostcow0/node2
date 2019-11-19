@@ -6,19 +6,19 @@ module.exports = {
                 allowNull:false,
                 primaryKey:true,
                 type:Sequelize.UUID,
-                defaultValue:Sequlieze.UUIDV4,
+                defaultValue:Sequelize.UUIDV4,
             },
             createdAt: {
                 allowNull:false,
-                type:Sequlize.DATE,
+                type:Sequelize.DATE,
             },
             updatedAt: {
                 allowNull:false,
-                type:Sequlize.DATE,
+                type:Sequelize.DATE,
             },
             email: {
                 allowNull:false,
-                type:Sequlieze.STRING,
+                type:Sequelize.STRING,
             },
         });
     },
